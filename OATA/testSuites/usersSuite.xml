@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite parallel="tests" name="Suite">
+
+    <!--  <listeners>
+          <listener class-name="tests.testsComponents.Listeners"/>
+      </listeners>-->
+
+  <!--  <test name="UserTestFirefox">
+        <parameter name="landingUrl" value="https://www.saucedemo.com/v1/index.html"/>
+        <parameter name="userName" value="standard_user"/>
+        <parameter name="password" value="secret_sauce"/>
+        <parameter name="browserName" value="firefox"/>
+        <classes>
+            <class name="pagesTests.LoginPageTest"/>
+            <class name="pagesTests.LandingPageTest"/>
+        </classes>
+    </test>-->
+
+    <test name="UserTestChrome">
+        <parameter name="landingUrl" value="https://www.saucedemo.com/v1/index.html"/>
+        <parameter name="userName" value="standard_user"/>
+        <parameter name="password" value="secret_sauce"/>
+        <parameter name="browserName" value="chrome"/>
+        <classes>
+           <!-- <class name="pagesTests.LoginPageTest"/>-->
+            <class name="pagesTests.LandingPageTest"/>
+        </classes>
+    </test>
+
+</suite>
