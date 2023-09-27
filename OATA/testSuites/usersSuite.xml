@@ -25,6 +25,7 @@
         <classes>
            <!-- <class name="pagesTests.LoginPageTest"/>-->
             <class name="pagesTests.LandingPageTest"/>
+            <class name="APITests.CreateUser"></class>
         </classes>
     </test>
 

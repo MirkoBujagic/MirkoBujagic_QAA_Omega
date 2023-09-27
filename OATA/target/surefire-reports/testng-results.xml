@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="8" passed="0" failed="2" skipped="6">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-09-22T14:30:58 CEST" name="Surefire suite" finished-at="2023-09-22T14:30:58 CEST" duration-ms="42">
+    <groups>
+    </groups>
+    <test started-at="2023-09-22T14:30:58 CEST" name="Surefire test" finished-at="2023-09-22T14:30:58 CEST" duration-ms="42">
+      <class name="pagesTests.LoginPageTest">
+        <test-method signature="verifyUserLogin(java.lang.String, java.lang.String)[pri:0, instance:pagesTests.LoginPageTest@4b168fa9]" started-at="2023-09-22T14:30:58 CEST" name="verifyUserLogin" finished-at="2023-09-22T14:30:58 CEST" duration-ms="0" status="FAIL">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'userName' is required by @Test on method verifyUserLogin but has not been marked @Optional or defined
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'userName' is required by @Test on method verifyUserLogin but has not been marked @Optional or defined
+
+at org.testng.internal.Parameters.createParams(Parameters.java:289)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:377)
+at org.testng.internal.Parameters.createParameters(Parameters.java:721)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:895)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:762)
+at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:60)
+at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:39)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:771)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:151)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:192)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:93)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:155)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserLogin -->
+      </class> <!-- pagesTests.LoginPageTest -->
+      <class name="pagesTests.LandingPageTest">
+        <test-method is-config="true" signature="launchApplication(java.lang.String, java.lang.String)[pri:0, instance:pagesTests.LandingPageTest@48524010]" started-at="2023-09-22T14:30:58 CEST" name="launchApplication" finished-at="1970-01-01T01:00:00 CET" duration-ms="-1695385858019" status="FAIL">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'landingUrl' is required by BeforeClass on method launchApplication but has not been marked @Optional or defined
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'landingUrl' is required by BeforeClass on method launchApplication but has not been marked @Optional or defined
+
+at org.testng.internal.Parameters.createParams(Parameters.java:289)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:377)
+at org.testng.internal.Parameters.createParameters(Parameters.java:721)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:164)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:275)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:151)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:192)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:93)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:155)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="verifyUserLogin(java.lang.String, java.lang.String)[pri:0, instance:pagesTests.LandingPageTest@48524010]" started-at="2023-09-22T14:30:58 CEST" name="verifyUserLogin" finished-at="2023-09-22T14:30:58 CEST" duration-ms="0" status="FAIL">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'userName' is required by @Test on method verifyUserLogin but has not been marked @Optional or defined
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'userName' is required by @Test on method verifyUserLogin but has not been marked @Optional or defined
+
+at org.testng.internal.Parameters.createParams(Parameters.java:289)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:377)
+at org.testng.internal.Parameters.createParameters(Parameters.java:721)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:895)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:762)
+at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:60)
+at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:39)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:771)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:151)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:192)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:93)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:155)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserLogin -->
+        <test-method signature="verifySortingItemsDropdown()[pri:0, instance:pagesTests.LandingPageTest@48524010]" started-at="2023-09-22T14:30:58 CEST" name="verifySortingItemsDropdown" finished-at="2023-09-22T14:30:58 CEST" depends-on-methods="pagesTests.LandingPageTest.verifyUserLogin" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method LandingPageTest.verifySortingItemsDropdown()[pri:0, instance:pagesTests.LandingPageTest@48524010] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method LandingPageTest.verifySortingItemsDropdown()[pri:0, instance:pagesTests.LandingPageTest@48524010] depends on not successfully finished methods
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:99)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:151)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:192)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:93)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:155)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySortingItemsDropdown -->
+        <test-method signature="verifyAddingItemToCart()[pri:0, instance:pagesTests.LandingPageTest@48524010]" started-at="2023-09-22T14:30:58 CEST" name="verifyAddingItemToCart" finished-at="2023-09-22T14:30:58 CEST" depends-on-methods="pagesTests.LandingPageTest.verifySorting" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method LandingPageTest.verifyAddingItemToCart()[pri:0, instance:pagesTests.LandingPageTest@48524010] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method LandingPageTest.verifyAddingItemToCart()[pri:0, instance:pagesTests.LandingPageTest@48524010] depends on not successfully finished methods
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:99)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:151)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:192)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:93)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:155)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAddingItemToCart -->
+        <test-method signature="verifySorting()[pri:0, instance:pagesTests.LandingPageTest@48524010]" started-at="2023-09-22T14:30:58 CEST" name="verifySorting" finished-at="2023-09-22T14:30:58 CEST" depends-on-methods="pagesTests.LandingPageTest.verifySortingItemsDropdown" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method LandingPageTest.verifySorting()[pri:0, instance:pagesTests.LandingPageTest@48524010] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method LandingPageTest.verifySorting()[pri:0, instance:pagesTests.LandingPageTest@48524010] depends on not successfully finished methods
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:99)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:151)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:192)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:93)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:155)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySorting -->
+        <test-method signature="verifyItemDetails()[pri:0, instance:pagesTests.LandingPageTest@48524010]" started-at="2023-09-22T14:30:58 CEST" name="verifyItemDetails" finished-at="2023-09-22T14:30:58 CEST" depends-on-methods="pagesTests.LandingPageTest.verifyAddingItemToCart" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method LandingPageTest.verifyItemDetails()[pri:0, instance:pagesTests.LandingPageTest@48524010] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method LandingPageTest.verifyItemDetails()[pri:0, instance:pagesTests.LandingPageTest@48524010] depends on not successfully finished methods
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:99)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:151)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:192)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:93)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:155)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyItemDetails -->
+        <test-method signature="verifyRemoveItem()[pri:0, instance:pagesTests.LandingPageTest@48524010]" started-at="2023-09-22T14:30:58 CEST" name="verifyRemoveItem" finished-at="2023-09-22T14:30:58 CEST" depends-on-methods="pagesTests.LandingPageTest.verifyItemDetails" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method LandingPageTest.verifyRemoveItem()[pri:0, instance:pagesTests.LandingPageTest@48524010] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method LandingPageTest.verifyRemoveItem()[pri:0, instance:pagesTests.LandingPageTest@48524010] depends on not successfully finished methods
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:99)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:151)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:192)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:93)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:155)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyRemoveItem -->
+        <test-method signature="countItems()[pri:0, instance:pagesTests.LandingPageTest@48524010]" started-at="2023-09-22T14:30:58 CEST" name="countItems" finished-at="2023-09-22T14:30:58 CEST" depends-on-methods="pagesTests.LandingPageTest.verifyRemoveItem" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method LandingPageTest.countItems()[pri:0, instance:pagesTests.LandingPageTest@48524010] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method LandingPageTest.countItems()[pri:0, instance:pagesTests.LandingPageTest@48524010] depends on not successfully finished methods
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:99)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:151)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:192)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:93)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:155)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- countItems -->
+      </class> <!-- pagesTests.LandingPageTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>
